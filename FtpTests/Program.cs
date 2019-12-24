@@ -25,6 +25,7 @@ namespace FtpTests
                 {
                     client.ServerCertificateValidate += ValidateCertificate;
                     client.SSLConfiguration.EnabledSslProtocols = SslProtocols.Tls12;
+                    client.Mode = FtpMode.Passive;
                     client.ConnectSSL(IP);     // or ConnectSSL for SSL
                     client.Login(UserName, Password);
                     byte[] bytes = client.Download(directory + "CustomerAlphavilleNovo.Tab");
