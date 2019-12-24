@@ -7,6 +7,7 @@
 
   <ItemGroup>
     <PackageReference Include="Ftp.dll" Version="2.0.19002.942" />
+    <PackageReference Include="Rebex.Ftp" Version="5.0.7290" />
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />
   </ItemGroup>
 
